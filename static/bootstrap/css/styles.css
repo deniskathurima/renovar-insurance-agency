@@ -1,0 +1,356 @@
+.nav-link{
+  /* color: #941504; */
+  font-family: -apple-system, serif;
+  font-weight: bold;
+}
+
+/* logo css */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* top bar css */
+.top-bar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+      padding: 0.6rem 0;
+    }
+    .top-bar .info-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;  /* center horizontally */
+      padding: 0.2rem 0;
+      font-size: 0.95rem;
+    }
+    .top-bar .info-item i {
+      width: 1.8rem;
+      text-align: center;
+      color: #007bff;
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+    }
+    /* On small screens, stack vertically */
+    @media (max-width: 767px) {
+      .top-bar .info-item {
+        justify-content: center;
+        padding: 0.3rem 0;
+      }
+    }
+
+    /* start of drop down css */
+     /* ---------- Custom hover dropdown ---------- */
+        .nav-item.dropdown {
+            position: relative;
+        }
+
+        /* Style the main link: keep white text, add flex for arrow */
+        .nav-link.dropdown-toggle {
+            color: white !important;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        /* Arrow pointing down (pure CSS) */
+        .arrow-down {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid white;   /* arrow colour matches white text */
+            transition: transform 0.2s ease;
+        }
+
+        /* On hover, rotate arrow slightly (optional, but nice) */
+        .nav-item.dropdown:hover .arrow-down {
+            transform: rotate(180deg);
+        }
+
+        /* ---- Dropdown menu (hidden by default) ---- */
+        .dropdown-menu-custom {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 0.25rem;
+            min-width: 200px;
+            background-color: #1e1e2f;      /* dark background to match navbar */
+            border-radius: 8px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+            list-style: none;
+            padding: 0.5rem 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-6px);
+            transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+            z-index: 1000;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Show dropdown on hover of the parent .dropdown */
+        .nav-item.dropdown:hover .dropdown-menu-custom {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Dropdown links */
+        .dropdown-menu-custom li a {
+            display: block;
+            padding: 0.6rem 1.25rem;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: background 0.15s, color 0.15s;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu-custom li a:hover {
+            background-color: #2d2d44;
+            color: #ffffff;
+        }
+
+        /* Subtle divider between dropdown items (optional) */
+        .dropdown-menu-custom li + li {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Demo page background to make navbar visible */
+        body {
+            background: #0b0b16;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        /* Nav container (simulate a dark navbar) */
+        .navbar-demo {
+            background: #14141f;
+            border-radius: 60px;
+            padding: 0.5rem 1.5rem;
+            display: inline-flex;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Ensure no default Bootstrap dropdown styling interferes */
+        .nav-item.dropdown .nav-link::after {
+            display: none !important; /* remove default Bootstrap caret */
+        }
+    /* end of drop down css */
+
+    .home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/static/images/insurancebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    text-decoration: none;
+    background: #f44336;
+    transition: 1s;
+}
+
+/* Start of Footer css */
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.footer .footer-newsletter {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  padding: 50px 0;
+}
+
+.footer .footer-newsletter h4 {
+  font-size: 24px;
+}
+
+.footer .footer-newsletter .newsletter-form {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 6px 8px;
+  position: relative;
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.footer .footer-newsletter .newsletter-form:focus-within {
+  border-color: var(--accent-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: 100%;
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  color: var(--default-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+  outline: none;
+}
+
+.footer .footer-newsletter .newsletter-form input[type=submit] {
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: -7px -8px -7px 0;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.footer .footer-top {
+  padding-top: 50px;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  margin-right: 3px;
+  font-size: 12px;
+  line-height: 0;
+  color: var(--accent-color);
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-about a {
+  color: var(--heading-color);
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+/* End of Footer css */
+
+/* Start of Contact/Claim Form css */
+.contactform{
+  padding-top: 100px;
+}
+
+/* End of Contact/Claim Form css */
+
+
+/* Start of Services Dropdown css */
+
+
+/* End of Services Dropdown css */
