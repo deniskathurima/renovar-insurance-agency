@@ -69,6 +69,7 @@
         /* On hover, rotate arrow slightly (optional, but nice) */
         .nav-item.dropdown:hover .arrow-down {
             transform: rotate(180deg);
+
         }
 
         /* ---- Dropdown menu (hidden by default) ---- */
@@ -105,7 +106,7 @@
             color: #e0e0e0;
             text-decoration: none;
             font-size: 0.95rem;
-            transition: background 0.15s, color 0.15s;
+            trangsition: background 0.15s, color 0.15s;
             white-space: nowrap;
         }
 
