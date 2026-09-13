@@ -1,5 +1,4 @@
 .nav-link{
-  /* color: #941504; */
   font-family: -apple-system, serif;
   font-weight: bold;
 }
@@ -9,7 +8,7 @@
 }
 
 .navbar .nav-link:hover {
-    color: #0004ff !important;          /* bright blue */
+    color: #0004ff !important;
   }
 
 
@@ -28,18 +27,14 @@
   width: 100%;
 }
 
-  /* .navbar ul li::after{
-    content: '';
-    width: 0%;
-    background: #0004ff;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-  } */
+.navbar .nav-link.active {
+  color: #0004ff !important;
+}
 
-  /* .navbar ul li:hover::after{
-    width: 100%;
-} */ */
+/* Keep the underline visible on the active link */
+.navbar ul li:has(.nav-link.active)::after {
+  width: 100%;
+}
 
 /* logo css */
 .img-fluid {
