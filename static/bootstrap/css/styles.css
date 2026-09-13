@@ -271,6 +271,7 @@
 
 .footer h4 {
   font-size: 16px;
+  color: #00A300;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -310,15 +311,16 @@
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: #007bff;
 }
 
 .footer .footer-about a {
-  color: var(--heading-color);
   font-size: 28px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: var(--heading-font);
+  font-family: Monospace;
+  color: #00A300;
+  text-decoration: none;
 }
 
 .footer .footer-contact p {
