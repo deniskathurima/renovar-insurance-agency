@@ -4,9 +4,42 @@
   font-weight: bold;
 }
 
- .navbar .nav-link:hover {
-    color: #007bff !important;          /* bright blue */
+.navbar ul li{
+  position: relative;
+}
+
+.navbar .nav-link:hover {
+    color: #0004ff !important;          /* bright blue */
   }
+
+
+.navbar ul li::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;     /* adjust */
+  height: 3px;
+  width: 0%;
+  background: #0004ff;
+  transition: width 0.5s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+  /* .navbar ul li::after{
+    content: '';
+    width: 0%;
+    background: #0004ff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  } */
+
+  /* .navbar ul li:hover::after{
+    width: 100%;
+} */ */
 
 /* logo css */
 .img-fluid {
