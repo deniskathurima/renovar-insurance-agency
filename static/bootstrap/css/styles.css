@@ -68,7 +68,7 @@
 
         /* On hover, rotate arrow slightly (optional, but nice) */
         .nav-item.dropdown:hover .arrow-down {
-            transform: rotate(180deg);
+            
         }
 
         /* ---- Dropdown menu (hidden by default) ---- */
