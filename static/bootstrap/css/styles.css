@@ -1,3 +1,4 @@
+/* Start of Navbar CSS */
 .nav-link{
   font-family: -apple-system, serif;
   font-weight: bold;
@@ -42,7 +43,9 @@
   height: auto;
 }
 
-/* top bar css */
+/* End of Navbar CSS */
+
+/* Start Top bar CSS */
 .top-bar {
       background-color: #f8f9fa;
       border-bottom: 1px solid #dee2e6;
@@ -69,8 +72,9 @@
         padding: 0.3rem 0;
       }
     }
+/* End of Top bar CSS */
 
-    /* start of drop down css */
+/* start of drop down css */
      /* ---------- Custom hover dropdown ---------- */
         .nav-item.dropdown {
             position: relative;
@@ -138,7 +142,7 @@
             color: #e0e0e0;
             text-decoration: none;
             font-size: 0.95rem;
-            trangsition: background 0.15s, color 0.15s;
+            transition: background 0.15s, color 0.15s;
             white-space: nowrap;
         }
 
@@ -171,8 +175,9 @@
         .nav-item.dropdown .nav-link::after {
             display: none !important; /* remove default Bootstrap caret */
         }
-    /* end of drop down css */
+/* End of drop down CSS */
 
+/* Start of Home CSS */
     .home{
     min-height: 100vh;
     width: 100%;
@@ -217,7 +222,9 @@
     transition: 1s;
 }
 
-/* Start of Footer css */
+/* End of Home CSS */
+
+/* Start of Footer CSS */
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -386,7 +393,27 @@
 /* End of Contact/Claim Form css */
 
 
-/* Start of Services Dropdown css */
+/* Start of services  drop down  */
 
+.dropdown-menu-custom.dropdown-3col{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px 16px;
+  padding: 12px;
+  min-width: 520px;     /* adjust if needed */
+  overflow: visible;    /* no scroll */
+  max-height: none;     /* no max height */
+}
 
-/* End of Services Dropdown css */
+.dropdown-menu-custom.dropdown-3col > li{
+  list-style: none;
+}
+
+.dropdown-menu-custom.dropdown-3col a{
+  display: block;
+  white-space: normal; /* allow wrapping */
+  padding: 6px 8px;
+  word-break: break-word;
+}
+
+/* End of services drop down CSS */

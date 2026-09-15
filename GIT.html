@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RENOVAR Insurance – Our Services</title>
+
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../static/bootstrap/css/styles.css" />
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <script src="static/bootstrap/js/script.js"></script>
+
+  <!-- Bootstrap 5 CSS (lightweight, no extra JS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 for subtle icons (optional but used for chevron and service icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+        .top-bar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+      padding: 0.5rem 0;
+    }
+    .top-bar .info-row {
+      display: flex;
+      align-items: center;
+      padding: 0.2rem 0;
+      font-size: 0.95rem;
+    }
+    .top-bar .info-row i {
+      width: 1.8rem;
+      text-align: center;
+      color: #007bff;
+      margin-right: 0.6rem;
+      font-size: 1.1rem;
+    }
+    /* make it look clean */
+    .top-bar .container {
+      max-width: 720px; /* optional: keeps it from being too wide */
+    }
+    .navbar {
+      margin-top: 0;
+    }
+    </style>
+
+
+  <style>
+    /* subtle custom styling to enhance readability */
+    body {
+      background-color: #f8faff;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    }
+    .services-header {
+      background: linear-gradient(135deg, #0b2b4f 0%, #1a4b7a 100%);
+      color: white;
+      padding: 2.5rem 0;
+      margin-bottom: 2rem;
+      border-radius: 0 0 2rem 2rem;
+      box-shadow: 0 8px 20px rgba(0, 20, 30, 0.15);
+    }
+    .services-header h1 {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .services-header p {
+      opacity: 0.9;
+      font-weight: 300;
+      max-width: 700px;
+      margin: 1rem auto 0;
+    }
+    .service-card {
+      background: white;
+      border: none;
+      border-radius: 1.25rem;
+      box-shadow: 0 8px 24px rgba(0, 20, 30, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      height: 100%;
+      padding: 1.5rem;
+      border-left: 6px solid #1a4b7a;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(0, 20, 30, 0.1);
+    }
+    .service-number {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #1a4b7a;
+      background: #e8f0fe;
+      display: inline-block;
+      padding: 0.2rem 0.75rem;
+      border-radius: 20px;
+      margin-bottom: 0.75rem;
+    }
+    .service-title {
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: #0b2b4f;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .service-title i {
+      color: #1a4b7a;
+      font-size: 1.2rem;
+      width: 1.8rem;
+      text-align: center;
+    }
+    .service-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+      columns: 1;
+    }
+    .service-list li {
+      margin-bottom: 0.5rem;
+      font-size: 0.98rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      color: #1e2a3a;
+    }
+    .service-list li i {
+      color: #1a4b7a;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      width: 1rem;
+      text-align: center;
+    }
+    .risk-flow {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 1rem;
+      background: #f0f5ff;
+      padding: 1rem 1.25rem;
+      border-radius: 40px;
+      margin-top: 1rem;
+      font-weight: 500;
+      color: #0b2b4f;
+      font-size: 0.95rem;
+    }
+    .risk-flow i {
+      color: #1a4b7a;
+      margin: 0 0.25rem;
+    }
+    .badge-service {
+      background: #e8f0fe;
+      color: #0b2b4f;
+      font-weight: 500;
+      padding: 0.3rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.4rem;
+      display: inline-block;
+    }
+    .dropdown-menu {
+      border: none;
+      box-shadow: 0 12px 30px rgba(0, 20, 30, 0.12);
+      border-radius: 1rem;
+      padding: 0.75rem 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .dropdown-item {
+      border-radius: 0.75rem;
+      padding: 0.6rem 1.2rem;
+      font-weight: 500;
+      color: #1e2a3a;
+    }
+    .dropdown-item:hover, .dropdown-item:focus {
+      background-color: #e8f0fe;
+      color: #0b2b4f;
+    }
+    .dropdown-item i {
+      width: 1.4rem;
+      color: #1a4b7a;
+      margin-right: 0.5rem;
+    }
+    .btn-outline-primary-custom {
+      border: 2px solid #1a4b7a;
+      color: #1a4b7a;
+      font-weight: 600;
+      border-radius: 40px;
+      padding: 0.45rem 1.5rem;
+      background: white;
+      transition: all 0.2s;
+    }
+    .btn-outline-primary-custom:hover {
+      background: #1a4b7a;
+      color: white;
+    }
+    footer {
+      font-size: 0.85rem;
+      color: #5b6f88;
+      border-top: 1px solid #d9e2ef;
+      padding-top: 1.5rem;
+      margin-top: 2.5rem;
+    }
+  </style>
+
+    <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Logo -->
+      <div class="col-md-3 col-12 info-item">
+        <img src="../static/images/renovar_logo.png" class="img-fluid animated w-100" alt="">
+      </div>
+      <!-- Column 2: Mobile number -->
+      <div class="col-md-3 col-12 info-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>+254 733 488 386</span>
+      </div>
+      <!-- Column 3: Email -->
+      <div class="col-md-3 col-12 info-item">
+        <i class="fas fa-envelope"></i>
+        <span>info@renovar.co.ke</span>
+      </div>
+      <!-- Column 4: Building location -->
+      <div class="col-md-3 col-12 info-item">
+        <i class="fas fa-map-marker"></i>
+        <span>MayFair Plaza, 3rd Floor, Oginga Odinga Road, Kisumu CBD</span>
+      </div>
+    </div>
+  </div>
+</div>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top" style="font-size: 70px;">
+    <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+        <ul style=" font-family: inherit; font-weight: bolder; font-size: 15px; padding-right: 10px;"class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">ABOUT US</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle" href="services.html" role="button" aria-expanded="false">
+                    OUR SERVICES
+                    <!-- Downward arrow (CSS triangle) -->
+                    <span class="arrow-down"></span>
+                </a>
+
+                <!-- Dropdown menu – appears on hover -->
+                <ul class="dropdown-menu-custom">
+                    <li><a href="personal.html">Personal Insurance</a></li>
+                    <li><a href="business.html">Business & Commercial Insurance</a></li>
+                    <li><a href="riskAdvisory.html">Risk Advisory</a></li>
+                    <li><a href="corporate.html">Corporate Insurance Solutions</a></li>
+                    <li><a href="policyPlacement.html">Policy Placement & Management</a></li>
+                    <li><a href="claimsSupport.html">Claims Support</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="contactus.html">CONTACT US</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="claim.html">RAISE A CLAIM</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- ========== HEADER with "Our Services" title ========== -->
+  <header class="services-header text-center">
+    <div class="container">
+      <h1 class="display-5">Our Services</h1>
+      <p class="lead mx-auto">RENOVAR Insurance Agency provides a range of insurance advisory and intermediary services designed to help clients manage their personal and commercial risks.</p>
+      <!-- Dropdown menu integrated in header for quick access to sections 1-6 -->
+      <div class="mt-4 d-flex justify-content-center">
+        <!-- <div class="dropdown">
+          <button class="btn btn-outline-light dropdown-toggle px-4 py-2 rounded-pill" type="button" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="border-width: 2px; font-weight: 500;">
+            <i class="fas fa-list-ul me-2"></i>Jump to service 1 – 6
+          </button>
+          <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="servicesDropdown" style="min-width: 280px;">
+            <li><a class="dropdown-item" href="#service1"><i class="fas fa-user-shield"></i>1. Personal Insurance</a></li>
+            <li><a class="dropdown-item" href="#service2"><i class="fas fa-building"></i>2. Business & Commercial Insurance</a></li>
+            <li><a class="dropdown-item" href="#service3"><i class="fas fa-chart-line"></i>3. Risk Advisory</a></li>
+            <li><a class="dropdown-item" href="#service4"><i class="fas fa-briefcase"></i>4. Corporate Insurance Solutions</a></li>
+            <li><a class="dropdown-item" href="#service5"><i class="fas fa-file-signature"></i>5. Policy Placement & Management</a></li>
+            <li><a class="dropdown-item" href="#service6"><i class="fas fa-hand-holding-heart"></i>6. Claims Support</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container my-4">
+    <!-- Service cards grid (1-6) using Bootstrap rows/cols -->
+    <div class="row g-4" style="justify-content: center;">
+      
+      <!-- Goods in Transit -->
+      <div class="col-lg-6" id="service4">
+        <div class="service-card h-100">
+          <div class="service-number"><i class="fas fa-hashtag me-1"></i> Service 9</div>
+          <div class="service-title">
+            <i class="fas fa-user-shield"></i>Goods in Transit
+          </div>
+          <p class="text-secondary">This is a policy that covers the insured against loss or damage
+             of goods being transported from one location to another through risks like theft or accidents
+              arising from the insured’s negligence.</p>
+
+        </div>
+      </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+ <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4" style="justify-content: center;">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Renovar</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>MayFair, 3rd Floor</p>
+            <p>Oginga Odinga Road</p>
+            <p>Kisumu CBD</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254 733 488 386</span></p>
+            <p><strong>Email:</strong> <span>info@renovar.co.ke</span></p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html">Our Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contactus.html">Contact Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="claim.html">Raise a Claim</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright @2026.</span> <strong class="px-1 sitename">Renovar Insurance Agency</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href=" https://wa.me/qr/EHKH7P6Q2J74F1">Effilink Solutions</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS Bundle (for dropdown functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Smooth scrolling for anchor links (optional) -->
+  <script>
+    (function() {
+      // Add smooth scrolling to all anchor links with hash
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === "#" || href === "") return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // optionally update URL without jump
+            history.pushState(null, null, href);
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
