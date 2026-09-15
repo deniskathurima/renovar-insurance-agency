@@ -636,78 +636,38 @@
     }
 /* End of Why Choose Us CSS */
 
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* Give the marquee vertical breathing room */
+  marquee {
+    padding: 30px 0;
+    background: #f9fbfd; /* optional */
+  }
 
-    
-    /* ----- marquee styles (native HTML marquee) ----- */
-    marquee {
-      display: block;
-      width: 100%;
-      background: #eef4fa;
-      border-radius: 2rem;
-      padding: 1.5rem 0;
-      box-shadow: inset 0 2px 8px rgba(0,0,0,0.02), 0 6px 12px -6px rgba(0,20,30,0.1);
-      border: 1px solid #d9e6f0;
-    }
+  /* Flex row with even spacing between logos */
+  .marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;              /* 👈 spacing between each image */
+    width: max-content;     /* keeps items in one long row */
+  }
 
-    /* image row inside marquee – keeps images from wrapping */
-    .marquee-content {
-      display: flex;
-      align-items: center;
-      gap: 1.8rem;
-      padding: 0 1.5rem;
-      white-space: nowrap;
-      width: max-content; /* ensures all images stay in one line */
-    }
+  /* Card wrapper (optional) */
+  .img-card {
+    flex: 0 0 auto;         /* prevent shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .img-card:hover {
-      transform: scale(1.01);
-    }
+  /* Image styling — unify height so logos align */
+  .img-card img {
+    height: 80px;           /* 👈 consistent logo height */
+    width: auto;
+    max-width: 250px;
+    object-fit: contain;
+    filter: grayscale(0%);  /* optional hover effect below */
+    transition: transform .3s ease, filter .3s ease;
+  }
 
-    .img-card img {
-      width: 100%;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 1rem;
-      background: #d9e2ec;
-      box-shadow: 0 2px 8px rgba(0, 20, 30, 0.08);
-      display: block;
-    }
-    
-
-    /* keep the marquee smooth */
-    marquee[behavior=""] {
-      behavior: scroll; /* default, but we keep it explicit */
-    }
-
-    /* small screen adjustments */
-    @media (max-width: 600px) {
-      .container {
-        padding: 1.5rem 1rem;
-      }
-
-      h1 {
-        font-size: 1.4rem;
-        flex-wrap: wrap;
-      }
-
-      .img-card {
-        width: 160px;
-      }
-
-      .img-card img {
-        height: 110px;
-      }
-
-      .marquee-content {
-        gap: 1rem;
-      }
-
-      marquee {
-        padding: 1rem 0;
-      }
-    }
+  .img-card img:hover {
+    transform: scale(1.05);
+  }
