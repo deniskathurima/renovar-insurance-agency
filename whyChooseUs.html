@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovar</title>
+
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../static/bootstrap/css/styles.css" />
+    
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <script src="../static/bootstrap/js/jquery-3.4.0.js"></script>
+    <script src="../static/bootstrap/js/popper.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.js"></script>
+    <script src="static/bootstrap/js/script.js"></script>
+
+      <!-- Bootstrap 5 + Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        .top-bar {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #dee2e6;
+      padding: 0.5rem 0;
+    }
+    .top-bar .info-row {
+      display: flex;
+      align-items: center;
+      padding: 0.2rem 0;
+      font-size: 0.95rem;
+    }
+    .top-bar .info-row i {
+      width: 1.8rem;
+      text-align: center;
+      color: #007bff;
+      margin-right: 0.6rem;
+      font-size: 1.1rem;
+    }
+    /* make it look clean */
+    .top-bar .container {
+      max-width: 720px; /* optional: keeps it from being too wide */
+    }
+    .navbar {
+      margin-top: 0;
+    }
+    </style>
+
+    
+</head>
+<body>
+    
+<div class="top-bar">
+  <div class="container">
+    <div class="row">
+      <!-- Column 1: Logo -->
+      <div class="col-md-3 col-12 info-item">
+        <img src="../static/images/renovar_logo.png" class="img-fluid animated w-100" alt="">
+      </div>
+      <!-- Column 2: Mobile number -->
+      <div class="col-md-3 col-12 info-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>+254 733 488 386</span>
+      </div>
+      <!-- Column 3: Email -->
+      <div class="col-md-3 col-12 info-item">
+        <i class="fas fa-envelope"></i>
+        <span>info@renovar.co.ke</span>
+      </div>
+      <!-- Column 4: Building location -->
+      <div class="col-md-3 col-12 info-item">
+        <i class="fas fa-map-marker"></i>
+        <span>MayFair Plaza, 3rd Floor, Oginga Odinga Road, Kisumu CBD</span>
+      </div>
+    </div>
+  </div>
+</div>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark sticky-top" style="font-size: 70px;">
+    <button class="navbar-toggler" type="button"data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- Links -->
+        <ul style=" font-family: inherit; font-weight: bolder; font-size: 15px; padding-right: 10px;"class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">ABOUT US</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white dropdown-toggle" href="services.html" role="button" aria-expanded="false">
+                    OUR SERVICES
+                    <!-- Downward arrow (CSS triangle) -->
+                    <span class="arrow-down"></span>
+                </a>
+
+                <!-- Dropdown menu – appears on hover -->
+                <ul class="dropdown-menu-custom dropdown-3col">
+                    <li><a href="medicalHealth.html">Medical Health Insurance</a></li>
+                    <li><a href="automobile.html">Automobile Insurance</a></li>
+                    <li><a href="livestock.html">Livestock Insurance</a></li>
+                    <li><a href="agroInsurance.html">Agro-Insurance</a></li>
+                    <li><a href="fireAndAlliedPerils.html">Fire And Allied Perils</a></li>
+                    <li><a href="creditProtectionPolicy.html">Credit Protection Policy</a></li>
+                    <li><a href="professionalIndemnity.html">Professional Indemnity</a></li>
+                    <li><a href="WIBA_GPA.html">WIBA/Group Personal Accident (GPA)</a></li>
+                    <li><a href="GIT.html">Goods in Transit (GIT)</a></li>
+                    <li><a href="contractorsAllRisks.html">Contractors All Risks</a></li>
+                    <li><a href="employer'sLiability.html">Employer's Liability</a></li>
+                    <li><a href="moneyInsurance&Fidelity Guarantee.html">Money Insurance & Fidelity Guarantee</a></li>
+                    <li><a href="hospitalMalpractice.html">Hospital Malpractice</a></li>
+                    <li><a href="theft_BurglaryInsurance.html">Theft/Burglary Insurance</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="publicLiability.html">Public Liability</a></li>
+                    <li><a href="pension&LifeInsurance.html">Pension & Life Insurance</a></li>
+                    <li><a href="domesticPackage.html">Domestic Package</a></li>
+                    <li><a href="life&Pensions.html">Life & Pensions</a></li>
+                    <li><a href="personalAccidentInsurance.html">Personal Accident Insurance</a></li>
+                    <li><a href="studentPersonalCover.html">Student Personal Cover</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active text-white" href="whyChooseUs.html">WHY CHOOSE US</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="contactus.html">CONTACT US</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white" href="claim.html">RAISE A CLAIM</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container py-5 my-md-4">
+    
+    <!-- Header: Why Choose RENOVAR? -->
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-lg-8">
+        <span class="badge-soft mb-3">Why Choose RENOVAR?</span>
+      </div>
+    </div>
+
+    <!-- 6 Feature Cards (Tailored Solutions → Long-Term Protection) -->
+    <div class="row g-4 mb-5">
+      <!-- Tailored Solutions -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-why h-100">
+          <div class="card-body">
+            <i class="bi bi-sliders2"></i>
+            <h3>Tailored Solutions</h3>
+            <p>We do not believe in a one-size-fits-all approach. We seek insurance solutions that correspond to the client's specific circumstances and risk profile.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Professional Guidance -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-why h-100">
+          <div class="card-body">
+            <i class="bi bi-compass"></i>
+            <h3>Professional Guidance</h3>
+            <p>Insurance can be complex. We simplify technical information and help clients make informed decisions.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Client-Centred Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-why h-100">
+          <div class="card-body">
+            <i class="bi bi-people"></i>
+            <h3>Client-Centred Service</h3>
+            <p>We prioritize communication, accessibility, and long-term relationships.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Comprehensive Approach -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-why h-100">
+          <div class="card-body">
+            <i class="bi bi-diagram-3"></i>
+            <h3>Comprehensive Approach</h3>
+            <p>From risk assessment and policy placement to renewals and claims support, we remain engaged throughout the insurance lifecycle.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Trusted Partnerships -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-why h-100">
+          <div class="card-body">
+            <i class="bi bi-building"></i>
+            <h3>Trusted Partnerships</h3>
+            <p>We work to establish strong relationships with reputable insurance providers, enabling us to identify competitive and appropriate solutions for our clients.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Long-Term Protection -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-why h-100">
+          <div class="card-body">
+            <i class="bi bi-shield-check"></i>
+            <h3>Long-Term Protection</h3>
+            <p>Our focus extends beyond purchasing a policy. We aim to help clients maintain appropriate protection as their personal and business circumstances evolve.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Approach – Timeline / numbered steps -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-10">
+        <div class="text-center mb-5">
+          <span class="badge-soft mb-2">Our Approach</span>
+          <h2 class="section-title mt-2">Understanding before recommending</h2>
+          <p class="section-subtitle col-lg-8 mx-auto mt-2">
+            At RENOVAR Insurance Agency, our process is built around understanding before recommending.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <!-- Step 01 -->
+            <div class="approach-step">
+              <div class="step-number">01</div>
+              <h4>Understand</h4>
+              <p>We listen to your needs, circumstances, objectives, and concerns.</p>
+            </div>
+            <!-- Step 03 -->
+            <div class="approach-step">
+              <div class="step-number">03</div>
+              <h4>Advise</h4>
+              <p>We explain relevant insurance options in clear and practical terms.</p>
+            </div>
+            <!-- Step 05 -->
+            <div class="approach-step">
+              <div class="step-number">05</div>
+              <h4>Protect</h4>
+              <p>We facilitate policy placement and provide ongoing support throughout the policy period.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Step 02 -->
+            <div class="approach-step">
+              <div class="step-number">02</div>
+              <h4>Assess</h4>
+              <p>We identify and evaluate the key risks you or your organization may face.</p>
+            </div>
+            <!-- Step 04 -->
+            <div class="approach-step">
+              <div class="step-number">04</div>
+              <h4>Recommend</h4>
+              <p>We help you select coverage that is appropriate for your requirements and budget.</p>
+            </div>
+            <!-- Step 06 -->
+            <div class="approach-step">
+              <div class="step-number">06</div>
+              <h4>Review</h4>
+              <p>We periodically review your coverage to ensure it continues to reflect your changing needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Commitment to Clients -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="commitment-box">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h2 class="section-title h3 mb-3" style="font-size: 1.75rem;">Our Commitment to Clients</h2>
+              <p class="mb-3">
+                At <span class="highlight">RENOVAR</span>, we are committed to delivering insurance services founded on 
+                <strong>professionalism, transparency, confidentiality, and accountability</strong>.
+              </p>
+              <p class="mb-3">
+                We recognize that choosing insurance is an important financial decision. That is why we aim to provide 
+                clear information, responsible guidance, and responsive service at every stage.
+              </p>
+              <p class="fst-italic fw-semibold mb-0" style="color: #0b1e3a;">
+                “Your risks are unique. Your protection should be too.”
+              </p>
+            </div>
+            <div class="col-md-4 text-center d-none d-md-block">
+              <i class="bi bi-patch-check-fill" style="font-size: 5rem; color: #1e4d7b; opacity: 0.8;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- subtle footer / spacer -->
+    <div class="text-center mt-5 pt-3">
+      <p class="text-muted small">RENOVAR Insurance Agency · Tailored protection for every stage</p>
+    </div>
+
+    <!-- our partners -->
+     <div class="text-center mb-5">
+     <h2 class="section-title mt-2">Our Partners</h2>
+     <marquee behavior="" direction="left" scrollamount="6" scrolldelay="20" loop="infinite">
+      <div class="marquee-content">
+        <!-- IMAGE 1 -->
+        <div class="img-card">
+          <img 
+            src="static/images/britam_logo.png" class="img-fluid animated w-100"
+            alt="Mountain landscape with a river"
+            loading="lazy"  style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 2 -->
+        <div class="img-card">
+          <img 
+            src="static/images/cic-group_logo.png" 
+            alt="Forest trees and sunlight"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 3 -->
+        <div class="img-card">
+          <img 
+            src="static/images/prudential_logo.png" 
+            alt="Brown puppy in a basket"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 4 -->
+        <div class="img-card">
+          <img 
+            src="static/images/kenya_alliance_logo.png" 
+            alt="Woman holding a camera in nature"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 5 -->
+        <div class="img-card">
+          <img 
+            src="static/images/sanlam_logo.png" 
+            alt="City skyline at night with reflections"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 6 -->
+        <div class="img-card">
+          <img 
+            src="static/images/liberty_kenya_logo.png" 
+            alt="Woman holding a camera in nature"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 7 -->
+        <div class="img-card">
+          <img 
+            src="static/images/madison_logo.jpg" 
+            alt="Woman holding a camera in nature"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 8 -->
+        <div class="img-card">
+          <img 
+            src="static/images/icea_lion_logo.png" 
+            alt="Woman holding a camera in nature"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+
+        <!-- IMAGE 9 -->
+        <div class="img-card">
+          <img 
+            src="static/images/kenindia_logo.jpg" 
+            alt="Woman holding a camera in nature"
+            loading="lazy" style="width: 250px; height: auto;"
+          >
+        </div>
+ 
+      </div>
+    </marquee>
+   
+
+  </main>
+
+  <!-- Bootstrap JS (optional for any interactive components, but not required) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4" style="justify-content: center;">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Renovar</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>MayFair, 3rd Floor</p>
+            <p>Oginga Odinga Road</p>
+            <p>Kisumu CBD</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254 733 488 386</span></p>
+            <p><strong>Email:</strong> <span>info@renovar.co.ke</span></p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 style="color: #00A300;">Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="services.html">Our Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="whyChooseUs.html">Why Choose Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contactus.html">Contact Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="claim.html">Raise a Claim</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright @2026.</span> <strong class="px-1 sitename">Renovar Insurance Agency</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href=" https://wa.me/qr/EHKH7P6Q2J74F1">Effilink Solutions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle (for dropdown functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Smooth scrolling for anchor links (optional) -->
+  <script>
+    (function() {
+      // Add smooth scrolling to all anchor links with hash
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === "#" || href === "") return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // optionally update URL without jump
+            history.pushState(null, null, href);
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
